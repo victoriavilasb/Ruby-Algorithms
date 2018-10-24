@@ -1,4 +1,8 @@
 #!/usr/bin/env ruby
+=begin 
+    This is a problem selected from the string algorithms section from URI Online Judge
+    URL: https://www.urionlinejudge.com.br/judge/pt/problems/view/1168
+=end 
 number_times = gets
 base_number_leds = {
     '1' => 2,

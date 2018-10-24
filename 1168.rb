@@ -21,13 +21,13 @@ n=0
 number_times.to_i
 while n<number_times.to_i
     total=0
-    number_to_leds = gets
+    number_to_leds = gets.chomp
     number_to_leds.to_s
 
     number_to_leds_temporary_array = number_to_leds.split""
 
     i=0 
-    while i< (number_to_leds_temporary_array.length)-1
+    while i< (number_to_leds_temporary_array.length)
         number = number_to_leds_temporary_array[i]
         total=total+ base_number_leds[number]
         i+=1

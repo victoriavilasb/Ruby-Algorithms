@@ -31,7 +31,7 @@ while n<number_times.to_i
     #sum the total of leds that we you need
     while i< (number_to_leds_temporary_array.length)
         number = number_to_leds_temporary_array[i]
-        total=total+ base_number_leds[number]
+        total+=base_number_leds[number]
         i+=1
     end 
 

@@ -23,8 +23,7 @@ n=0
 number_times.to_i
 while n<number_times.to_i
     total=0
-    number_to_leds = gets.chomp
-    number_to_leds.to_s
+    number_to_leds = gets.chomp.to_s
     number_to_leds_temporary_array = number_to_leds.split""
 
     i=0 

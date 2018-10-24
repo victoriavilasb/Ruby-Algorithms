@@ -36,7 +36,21 @@ def deciphering(key,message)
 	return response
 end 
 
-puts "Type the message that you want to encrypt"
-message = gets.chomp
-puts "Type the encrypting key:"
-key = gets.chomp
+puts "To encrypt: 1"
+puts "To decrypt: 2"
+option = gets.chomp
+
+case option
+	when '1'
+		puts "Type the message that you want to encrypt"
+		message = gets.chomp
+		puts "Type the encrypt key:"
+		key = gets.chomp.to_i
+		encrypting(key,message)
+	when '2'
+		puts "Type the message that you want to decrypt"
+		message = gets.chomp
+		puts "Type the decrypt key:"
+		key = gets.chomp.to_i
+		deciphering(key,message)
+end

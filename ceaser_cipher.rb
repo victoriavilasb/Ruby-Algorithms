@@ -53,4 +53,6 @@ case option
 		puts "Type the decrypt key:"
 		key = gets.chomp.to_i
 		deciphering(key,message)
+	else
+		puts "Opção inválida"
 end

@@ -11,17 +11,16 @@ wthree = ['t','h','r','e','e']
 i=0
 j=0
 sum=0
-while i<number_of_times.to_i
+for numero in (i, number_of_times.to_i)
     number_ext = gets.chomp
     number_ext_array = number_ext.split""
 
     # one
     if (number_ext_array.length) == 3 and (number_ext_array[0] == 'o' or number_ext_array[2] == 'e')
-        while j< (number_ext_array.length)
-            if number_ext_array[j] == wone[j]
+        for numero in (j,number_ext_array.length)
+            if number_ext_array[numero] == wone[numero]
                 sum+=1
             end 
-            j+=1
         end 
         
         puts 2 if sum >=2
@@ -30,29 +29,24 @@ while i<number_of_times.to_i
         j=0
     # two
     elsif (number_ext_array.length) == 3 and (number_ext_array[0] == 't' or number_ext_array[2] == 'o')
-        while j< (number_ext_array.length)
-            if number_ext_array[j] == wtwo[j]
+        for numero in (j,number_ext_array.length)
+            if number_ext_array[numero] == wtwo[numero]
                 sum+=1
             end 
-            j+=1
         end 
         
         puts 2 if sum>=2
-        
-        sum =0
-        j=0   
+        sum =0 
 
     # three
     elsif (number_ext_array.length) == 5 and (number_ext_array[0] == 't' or number_ext_array[4] == 'e')
-        while j< (number_ext_array.length)
-            if number_ext_array[j] == wthree[j]
+        for numero in (j,number_ext_array.length)
+            if number_ext_array[numero] == wthree[numero]
                 sum+=1
             end 
-            j+=1
         end 
-        
+      
         puts 3 if sum>=4
         
     end 
-    i+=1
 end

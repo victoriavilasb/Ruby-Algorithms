@@ -23,9 +23,9 @@ while i<number_of_times.to_i
             end 
             j+=1
         end 
-        if sum>=2
-            puts 1
-        end
+        
+        puts 2 if sum >=2
+        
         sum=0
         j=0
     # two
@@ -36,9 +36,9 @@ while i<number_of_times.to_i
             end 
             j+=1
         end 
-        if sum>=2
-            puts 2
-        end 
+        
+        puts 2 if sum>=2
+        
         sum =0
         j=0   
 
@@ -50,9 +50,9 @@ while i<number_of_times.to_i
             end 
             j+=1
         end 
-        if sum>=4
-            puts 3
-        end 
+        
+        puts 3 if sum>=4
+        
     end 
     i+=1
 end

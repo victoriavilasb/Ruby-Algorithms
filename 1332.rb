@@ -4,11 +4,8 @@
 =end 
 
 number_of_times = gets
-# one
 wone = ['o','n','e']
-# two
 wtwo = ['t','w','o']
-# three
 wthree = ['t','h','r','e','e']
 
 i=0
@@ -18,7 +15,6 @@ while i<number_of_times.to_i
     number_ext = gets.chomp
     number_ext_array = number_ext.split""
 
-    
     # one
     if (number_ext_array.length) == 3 and (number_ext_array[0] == 'o' or number_ext_array[2] == 'e')
         while j< (number_ext_array.length)
@@ -45,6 +41,8 @@ while i<number_of_times.to_i
         end 
         sum =0
         j=0   
+
+    # three
     elsif (number_ext_array.length) == 5 and (number_ext_array[0] == 't' or number_ext_array[4] == 'e')
         while j< (number_ext_array.length)
             if number_ext_array[j] == wthree[j]
